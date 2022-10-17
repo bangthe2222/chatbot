@@ -1,7 +1,10 @@
 const express = require('express');
+const cors = require('cors')
 const { dockStart } = require('@nlpjs/basic');
 const app = express();
 const port = process.env.PORT || 3001;
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 async function chatBot(text = 'Who are you' ) {
