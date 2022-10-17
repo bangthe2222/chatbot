@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@nlpjs/basic": "^4.23.5",
+    "@nlpjs/qna-importer": "^4.22.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.10"
+  }
+}
