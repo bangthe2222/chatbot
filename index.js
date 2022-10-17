@@ -13,7 +13,7 @@ async function chatBot(text = 'Who are you' ) {
 };
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
-  res.send('hello from chatbot');
+  res.send('hello from chatbot v1');
 })
 app.post('/chatbot/', async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
