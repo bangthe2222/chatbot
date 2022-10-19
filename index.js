@@ -12,7 +12,11 @@ async function chatBot(text = 'Who are you' ) {
   const nlp = dock.get('nlp');
   await nlp.load('./model_v1.model')
   const response = await nlp.process('en', text);
-  return response['intent']
+  if(response['intent'] == 'None'){
+    return "I don't understand!"
+  } else{
+    return response['intent']
+  }
 };
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
